@@ -1,0 +1,352 @@
+body {
+    margin-top: 30px;
+}
+
+
+/* =========================================
+   GENERAL BODY
+   ========================================= */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================
+   CART / ORDER PAGE CONTENT
+   ========================================= */
+
+.cart-page,
+.order-page {
+    padding-top: 30px;
+}
+
+/* =========================================
+   TABLE
+   ========================================= */
+
+.table-container {
+    width: calc(100% - 30px);
+    margin-left: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 0;
+    /* IMPORTANT */
+    table-layout: fixed;
+}
+
+table,
+th,
+td {
+    border: none;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* =========================================
+   TABLE HEADER
+   ========================================= */
+
+th {
+    background-color: #d22e2e;
+    color: #f2f2f2;
+}
+
+/* =========================================
+   ROUNDED CORNERS
+   ========================================= */
+
+thead tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+
+thead tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+
+tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+
+.change {
+    background-color: #d9393d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.change:hover {
+    background-color: #e0b99d;
+    color: #d9393d;
+}
+
+input {
+    width: 70%;
+    border-radius: 7px;
+    background-color: white;
+}
+
+
+/* =========================================
+   TOP HEADER
+   ========================================= */
+
+.top-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 60px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   BACK BUTTON - LEFT
+   ========================================= */
+
+.back-button {
+    position: absolute;
+    left: 15px;
+
+    color: #d22e2e;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* =========================================
+   CENTER TITLE
+   ========================================= */
+
+.top-header h1 {
+    margin: 0;
+    color: #d22e2e;
+}
+
+
+/* =========================================
+   ORDERED BUTTON - RIGHT
+   ========================================= */
+
+.ordered-product {
+    position: absolute;
+    right: 15px;
+
+    background-color: #d22e2e;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* =========================================
+   CART ACTION BUTTONS
+   ========================================= */
+
+.cart-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 95%;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.select-delete-product {
+    background-color: red;
+}
+
+.submit-product {
+    background-color: green;
+}
+
+.submit-payment {
+    background-color: green;
+}
+
+.cancel-order {
+    background-color:#7b1113;
+}
+
+.received-order {
+    background-color:#FDB927;
+    color: black;
+}
+
+.clear-cancel {
+    background-color:#00538C;
+}
+
+
+/* =========================================
+   GENERAL BUTTON
+   ========================================= */
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.confirm-modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm-modal {
+    background: white;
+    width: 350px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.confirm-modal h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #d22e2e;
+}
+
+.confirm-modal p {
+    margin-bottom: 25px;
+}
+
+.confirm-modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.confirm-modal-buttons button {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cancel-confirm {
+    background-color: #ccc;
+    color: #333;
+}
+
+.confirm-action {
+    background-color: #d22e2e;
+    color: white;
+}
+
+.confirm-action:hover {
+    background-color: #b52222;
+}
+
+/* =========================================
+   PAYMENT METHOD
+   ========================================= */
+
+.payment-method-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-method-container label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #d22e2e;
+}
+
+#payment-method {
+    padding: 10px 35px 10px 12px;
+    min-width: 300px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+}
+
+#payment-method:focus {
+    outline: none;
+    border-color: #d22e2e;
+}
+
+.account-number-input {
+    width: 200px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    background-color: white;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.cart-checkbox {
+    width: auto;
+    padding: 0;
+    margin-left: 40px;
+}
+
+
+        .payment-option {
+    width: 76%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 15px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.payment-option:focus {
+    outline: none;
+    border-color: #007bff;
+}
